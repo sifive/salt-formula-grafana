@@ -17,7 +17,10 @@ Debian:
   session:
     engine: file
   auth:
-    engine: application
+    engine: anonymous
+    anonymous:
+      enabled: true
+      organization: SiFive
     ldap:
       enabled: false
       host: '127.0.0.1'
